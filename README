@@ -1,4 +1,6 @@
 Filtered Input plugin for jQuery
 ================================
 
-This plugin allows you to filter user input using regular expressions. You also can set maximum length of the input value and default value.
+This plugin allows you to filter user input with predefined regular expressions.
+It also has an option to set maximum length of the input value and default value.
+It has been tested on Internet Explorer 9, Google Chrome 16.0, Safari 5.0.3, Opera 10.51, FireFox 4.0.1
