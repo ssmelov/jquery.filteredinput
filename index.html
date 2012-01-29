@@ -1,20 +1,20 @@
 <html>
 <head>
 <title> jQuery Filter Input Test </title>
-<script src="js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/jquery.filteredinput.js" type="text/javascript"></script>
+<script src="lib/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="src/jquery.filteredinput.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function()
 	{
-        $("#name").filterinput({regexp:'[A-Za-z0-9 ]', maxlength:15});
-        $("#fieldlife").filterinput({regexp:'[0-9]', maxlength:2, defaultval: "0"});		
+        $("#alphanumeric").filterinput({regexp:'[A-Za-z0-9 ]', maxlength:15});
+        $("#numeric").filterinput({regexp:'[0-9]', maxlength:2, defaultval: "0"});		
     });
 </script>
 </head>
 <body>
 <table>
-		<tr><td>Work Location Name</td><td><input id="name" value="<>" type="text" tabindex="1" /></td><td>alphanumeric</td></tr>
-		<tr><td>Field Life</td><td><input id="fieldlife" type="text" tabindex="2"/></td><td>numeric</td></tr>
+		<tr><td>Alphanumeric: </td><td><input id="alphanumeric" value="<>" type="text" tabindex="1" /></td><td>alphanumeric</td></tr>
+		<tr><td>Numeric:</td><td><input id="numeric" type="text" tabindex="2"/></td><td>numeric</td></tr>
 </table>
 </body>
 </html>
