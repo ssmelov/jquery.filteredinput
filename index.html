@@ -1,0 +1,20 @@
+<html>
+<head>
+<title> jQuery Filter Input Test </title>
+<script src="js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.filteredinput.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+        $("#name").filterinput({regexp:'[A-Za-z0-9 ]', maxlength:15});
+        $("#fieldlife").filterinput({regexp:'[0-9]', maxlength:2, defaultval: "0"});		
+    });
+</script>
+</head>
+<body>
+<table>
+		<tr><td>Work Location Name</td><td><input id="name" value="<>" type="text" tabindex="1" /></td><td>alphanumeric</td></tr>
+		<tr><td>Field Life</td><td><input id="fieldlife" type="text" tabindex="2"/></td><td>numeric</td></tr>
+</table>
+</body>
+</html>
